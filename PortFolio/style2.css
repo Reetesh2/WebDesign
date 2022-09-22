@@ -1,0 +1,288 @@
+
+/* used for containing the elment in middle of the page */
+.container {
+    width: 70%;
+    margin: auto;
+    /* moves everything to middle */
+    overflow: hidden;
+    /* doesn't let the children to get out */
+}
+
+/* header alignment */
+header {
+    text-align: center;
+    background-color: #7B7D7D;
+}
+
+/** change color on hover */
+a:hover {
+    color: #cccccc;
+}
+
+/* styling header links  */
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: left;
+    color: black;
+
+}
+
+h1 {
+    color: black;
+    letter-spacing: 2px;
+}
+/* removal and transformation anchor  */
+ul li a {
+    text-decoration: none;
+    margin-left: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    /* removes underline from links */
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+    /* outline: none;  outline provides accessiblity feature */
+
+}
+
+
+body {
+    background-color: #96e0b2;
+    /* font: font-style font-variant font-weight font-size/line-height font-family */
+    font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+main {
+    padding: 10px;
+    background-color: lightgray;
+    overflow: auto;
+}
+
+div video {
+    margin-left: 200px;
+}
+
+/* media query */
+@media (max-width:500px){
+    video{
+       visibility: hidden;
+    }
+
+}
+
+main img {
+
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 10px;
+}
+
+main ul li {
+    text-decoration: none;
+    display: -moz-inline-grid;
+    background-color: white;
+    padding: none;
+    text-align: center;
+    margin: none;
+}
+figcaption{
+    margin-left: 0;
+    text-size-adjust: auto;
+}
+
+span {
+    padding-left: 0px;
+    font-weight: 300;
+    color: brown;
+}
+
+h2 {
+    color: black;
+    margin-left: 340px;
+    margin-bottom: 0px;
+}
+
+.edu {
+    background-color: black;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Green */
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+/* Blue */
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+/* Red */
+.php {
+    width: 60%;
+    background-color: #757272;
+}
+
+/* Dark Grey */
+.java {
+    width: 90%;
+    background-color: rgb(230, 230, 12);
+}
+/*Dark Red*/
+.python {
+    width: 50%;
+    background-color: rgb(66, 10, 19);
+}
+/*ocean blue */
+.cpp {
+    width: 30%;
+    background-color: rgb(67, 182, 193);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    text-align: center;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font: 400 17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row h2 {
+    margin: 0px;
+}
+
+.resume {
+    align-items: center;
+    padding-left: 40%;
+}
+
+.resume p {
+
+    margin-bottom: 7px;
+}
+
+.resume button {
+    padding-left: 0;
+    margin-left: 8%;
+}
+
+.resume button:hover {
+    transform: scale(1.5);
+}
+
+button {
+
+    background-color: #7B7D7D;
+    border-radius: 15px;
+    width: auto;
+}
+
+/* The box model: to see every box that makes up the page */
+/* * {
+   outline: 1px solid red !important;
+   background-color:rgba(0,2,54,.1) !important
+}
+
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }s
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); } */
